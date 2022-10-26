@@ -28,10 +28,15 @@ p {
     
     font-family: 'avenir_lt_std95_black';
     padding-top: 17vh;
-    animation: p-load 500ms ease-in 400ms
+    animation: p-load 1000ms ease-in 400ms
 }
 h1{
     font-family: 'avenir_lt_std55_roman';
+    animation: p-load 1000ms ease-in 700ms
+}
+h3{
+    font-family: 'avenir_lt_std55_roman';
+    animation: p-load 1000ms ease-in 1000ms
 }
 
 .gamename{
@@ -40,11 +45,31 @@ h1{
 }
 @keyframes p-load{
     0%{
-        transform: translateY(100%);
+        transform: translateY(50%);
         opacity: 0;;
     }
     100%{
         transform: translateY(0%);
         opacity: 1;
+    }
+}
+@keyframes h1-load{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes h3-load{
+    0%{
+        transform: translateY(50%);
+        opacity: 0;;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1 ;
     }
 }
