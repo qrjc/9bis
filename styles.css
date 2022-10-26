@@ -114,8 +114,13 @@ h3{
         opacity: 1 ;
    
     }
+    70%{
+        scale: .99;
+
+    }
     80%{
         opacity: 1;
+
     }
     100%{
         scale:1;
