@@ -9,6 +9,7 @@
     left: 0px;
     top: 0px;
     width: 100vw;
+    height:100vh;
     z-index: 9999;
     background: url('./Asset.png') 50% 50% no-repeat #d84b38;
     opacity: .8;
@@ -48,14 +49,14 @@ h1{
     animation-fill-mode: forwards;
 }
 h3{
-    opacity:0
+    opacity:0;
     font-family: 'avenir_lt_std55_roman';
     animation: p-load 1000ms ease-in 700ms;
     animation-fill-mode: forwards;
 }
 
 .gamename{
-    opacity:0
+    opacity:0;
     font-size: 27px;
     animation: p-load 1000ms ease-in 1300ms;
     animation-fill-mode: forwards;
