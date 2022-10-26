@@ -41,7 +41,7 @@
     font-family: 'avenir_lt_std55_roman'; 
     font-size: 20px;  
     padding-top: 5vh;
-    animation: p-load 1600ms ease-in 1500ms;
+    animation: p-load 1600ms ease-out 2500ms;
     animation-fill-mode: forwards;
     
 }
@@ -56,7 +56,7 @@ h1{
     opacity:0;
      font-family: 'avenir_lt_std95_black';
 
-    animation: p-load 1600ms ease-in 400ms;
+    animation: p-load 1600ms ease-out 1500ms;
     animation-fill-mode: forwards;
 }
 h3{
@@ -64,7 +64,7 @@ h3{
     opacity:0;
     font-size:38px;
     font-family: 'avenir_lt_std55_roman';
-    animation: h3-load 1600ms ease-in 1600ms;
+    animation: h3-load 1600ms ease-out 2500ms;
     animation-fill-mode: forwards;
 }
 
@@ -105,19 +105,20 @@ h3{
 
 @keyframes name-load{
     0%{
-        
+        scale: .9;
         opacity: 0;;
-        transform: translateY(0.7%);
+ 
     }
     50%{
         
         opacity: 1 ;
-        transform: translateY(0%);
+   
     }
     80%{
         opacity: 1;
     }
     100%{
+        scale:1;
         opacity:0;
     }
 }
