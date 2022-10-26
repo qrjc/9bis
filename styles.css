@@ -11,7 +11,7 @@
     width: 100%;
     height:100%;
     z-index: 9999;
-    background: url('./Asset.png') 50% 50% no-repeat #d84b38;
+    background:   #d84b38;
     opacity: 0;
     animation: name-load 1500ms ease-in;
     animation-fill-mode: forwards;
@@ -44,6 +44,12 @@
     animation: p-load 1600ms ease-in 1500ms;
     animation-fill-mode: forwards;
     
+}
+h2{   
+    font-family: 'avenir_lt_std95_black';
+    padding-top: 26vh;
+
+
 }
 
 h1{
@@ -101,10 +107,12 @@ h3{
     0%{
         
         opacity: 0;;
+        transform: translateY(0.7%);
     }
     50%{
         
         opacity: 1 ;
+        transform: translateY(0%);
     }
     80%{
         opacity: 1;
