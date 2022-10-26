@@ -12,7 +12,9 @@
     height:100%;
     z-index: 9999;
     background: url('./Asset.png') 50% 50% no-repeat #d84b38;
-    opacity: .8;
+    opacity: 0;
+    animation: name-load 1500ms ease-in;
+    animation-fill-mode: forwards;
 }
 
 
@@ -34,49 +36,46 @@
     font-style: normal;
 
 }
-p {
+.p {
     opacity:0;
-    font-family: 'avenir_lt_std55_roman';   
-    padding-top: 17vh;
-    animation: p-load 1000ms ease-in 1000ms;
+    font-family: 'avenir_lt_std55_roman'; 
+    font-size: 20px;  
+    padding-top: 5vh;
+    animation: p-load 1600ms ease-in 1500ms;
     animation-fill-mode: forwards;
     
 }
+
 h1{
     opacity:0;
      font-family: 'avenir_lt_std95_black';
 
-    animation: p-load 1000ms ease-in 400ms;
+    animation: p-load 1600ms ease-in 400ms;
     animation-fill-mode: forwards;
 }
 h3{
+    margin-top: -20px;
     opacity:0;
     font-size:38px;
     font-family: 'avenir_lt_std55_roman';
-    animation: p-load 1000ms ease-in 700ms;
+    animation: h3-load 1600ms ease-in 1600ms;
     animation-fill-mode: forwards;
 }
 
 .gamename{
-    opacity:0;
+   opacity: 1;
     font-size: 27px;
-    animation: p-load 1000ms ease-in 1300ms;
-    animation-fill-mode: forwards;
+    font-family: 'avenir_lt_std95_black'; 
+    font-size: 20px;  
+    margin-bottom: 5px
+    ;
+   
+
 
 }
 @keyframes p-load{
     0%{
-        transform: translateY(50%);
-        opacity: 0;;
-    }
-    100%{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-@keyframes h1-load{
-    0%{
-        transform: translateY(50%);
+        transform: translateY(20%);
         opacity: 0;;
     }
     100%{
@@ -86,11 +85,31 @@ h3{
 }
 @keyframes h3-load{
     0%{
-        transform: translateY(50%);
+        transform: translateY(20%);
         opacity: 0;;
+    }
+    30%{
+        opacity: 0;
     }
     100%{
         transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes name-load{
+    0%{
+        
+        opacity: 0;;
+    }
+    50%{
+        
         opacity: 1 ;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity:0;
     }
 }
