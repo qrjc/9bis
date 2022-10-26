@@ -51,7 +51,7 @@ h1{
 }
 h3{
     opacity:0;
-    font-size:38px:
+    font-size:38px;
     font-family: 'avenir_lt_std55_roman';
     animation: p-load 1000ms ease-in 700ms;
     animation-fill-mode: forwards;
