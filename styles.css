@@ -1,129 +1,198 @@
+
+@font-face {
+    font-family: 'berthold_akzidenz_grotesk_bRg';
+    src: url('akzidenzgroteskbe-regular-webfont.woff2') format('woff2'),
+         url('akzidenzgroteskbe-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqbold';
+    src: url('akzidenzgrotesk-bold-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'akzidenz-grotesk_bqmedium';
+    src: url('akzidenzgrotesk-medium-webfont.woff2') format('woff2'),
+         url('akzidenzgrotesk-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 *{
-    background-color:   #d84b38;
-    text-align: center;
-    color: white;
-    padding-top: 3vh;
-}
-.loader {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    height:100%;
-    z-index: 9999;
-    background:   #d84b38;
-    opacity: 0;
-    animation: name-load 1500ms ease-in;
-    animation-fill-mode: forwards;
-}
-
-
-@font-face {
-    font-family: 'avenir_lt_std95_black';
-    src: url('avenirltstd-black-webfont.woff2') format('woff2'),
-         url('avenirltstd-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-
-    
-}
-@font-face {
-    font-family: 'avenir_lt_std55_roman';
-    src: url('avenirltstd-roman-webfont.woff2') format('woff2'),
-         url('avenirltstd-roman-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-.p {
-    opacity:0;
-    font-family: 'avenir_lt_std55_roman'; 
-    font-size: 20px;  
-    padding-top: 5vh;
-    animation: p-load 1600ms ease-out 2500ms;
-    animation-fill-mode: forwards;
-    
-}
-h2{   
-    font-family: 'avenir_lt_std95_black';
-    padding-top: 26vh;
-
-
-}
-
-h1{
-    opacity:0;
-     font-family: 'avenir_lt_std95_black';
-
-    animation: p-load 1600ms ease-out 1500ms;
-    animation-fill-mode: forwards;
-}
-h3{
-    margin-top: -20px;
-    opacity:0;
-    font-size:38px;
-    font-family: 'avenir_lt_std55_roman';
-    animation: h3-load 1600ms ease-out 2500ms;
-    animation-fill-mode: forwards;
-}
-
-.gamename{
-   opacity: 1;
-    font-size: 27px;
-    font-family: 'avenir_lt_std95_black'; 
-    font-size: 20px;  
-    margin-bottom: 5px
-    ;
+    background-color: #fbba00 ;
    
+    color: white;
+}
+body{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    margin-top: -20px;
 
+}
+main div {
+    display: flex;
+    flex-direction: column;
+    
+}
+.numero-up img{
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+.numero-down img{
+    width: 33px;
+    height: 33px;
+    align-self: center  ;
+}
+header{
+    opacity: 1;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+    animation: p-load 800ms ease-out 2000ms;
+    animation-fill-mode: forwards;
+    align-items: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 384px
+}
+
+
+.num{
+    font-family: akzidenz-grotesk_bqmedium;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-right: 3px;
+}
+.num-down{
+    font-family: akzidenz-grotesk_bqmedium;
+    font-size: 43px;
+    margin-top: 43px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    animation: p-load 800ms ease-out 2000ms;
+    animation-fill-mode: forwards;
+}
+p{
+  font-family: berthold_akzidenz_grotesk_bRg;  
+  font-size: 14px;
+  line-height: 200%;
+  opacity: 1;
+  animation: p-load 800ms ease-out 2000ms;
+  animation-fill-mode: forwards;}
+h3{
+    font-family:akzidenz-grotesk_bqmedium ;
+    margin-right: 213px;
+    display: flex;
+    align-items: center;
+}
+.incorrecta{
+    font-family: akzidenz-grotesk_bqmedium;
+    line-height: 200%;
+    font-size: 14px;
+    margin-left: -3px;
+    opacity: 1;
+    animation: p-load 800ms ease-out 2000ms;
+    animation-fill-mode: forwards;
+
+}
+.correcta{
+    font-family: akzidenz-grotesk_bqmedium;
+    line-height: 200%;
+    font-size: 14px;
+    margin-left: -3px;
+    animation: correct 2300ms ease-out 3000ms;
+    animation-fill-mode: forwards;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ol{
+    margin-left: -18px;
+}
+.footerimg{
+    width: 86px;
+    height: 86px;
+    margin-bottom: 52px;
+    margin-left: 164px;
+}
+.description{
+    opacity: 0;
+    text-align: center;
+    animation: description 400ms ease-out 5000ms;
+    animation-fill-mode: forwards;
+    margin-top: -100vh;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 @keyframes p-load{
     0%{
-        transform: translateY(20%);
-        opacity: 0;;
+        
+        opacity: 1;;
     }
     100%{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-}
-@keyframes h3-load{
-    0%{
-        transform: translateY(20%);
-        opacity: 0;;
-    }
-    30%{
+     
         opacity: 0;
     }
+}
+@keyframes correct{
+    0%{
+
+
+        transform: translate(0%, 0%);
+        scale: 1
+    }
     100%{
-        transform: translateY(0%);
-        opacity: 1;
+
+        transform: translate(0%, 0vh);
+        scale: 1.2
+
     }
 }
-
-@keyframes name-load{
+@keyframes description {
     0%{
-        scale: .9;
-        opacity: 0;;
- 
+        opacity: 0;
+        scale:.9;
+        transform: translateY(-24vh);
     }
-    50%{
-        
-        opacity: 1 ;
-   
-    }
-    70%{
-        scale: .99;
 
-    }
-    80%{
-        opacity: 1;
-
-    }
     100%{
-        scale:1;
-        opacity:0;
+        opacity: 1;
+        scale: 1;
+        transform: translateY(-25vh);
     }
 }
