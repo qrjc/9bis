@@ -150,6 +150,7 @@ ol{
     animation: description 400ms ease-out 5000ms;
     animation-fill-mode: forwards;
     margin-top: -100vh;
+    font-size: 16px;
 }
 .container {
     width: 100%;
